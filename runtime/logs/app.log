@@ -1,0 +1,76 @@
+2024-03-03 13:17:39 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: yii\web\Request::cookieValidationKey must be configured with a secret key. in C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\Request.php:1723
+Stack trace:
+#0 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\Request.php(1705): yii\web\Request->loadCookies()
+#1 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\User.php(593): yii\web\Request->getCookies()
+#2 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\User.php(321): yii\web\User->getIdentityAndDurationFromCookie()
+#3 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\User.php(727): yii\web\User->loginByCookie()
+#4 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#5 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#6 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#7 C:\OSPanel\domains\prak\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get()
+#8 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#9 [internal function]: yii\base\BaseObject->__construct()
+#10 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs()
+#11 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#12 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#13 C:\OSPanel\domains\prak\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject()
+#14 C:\OSPanel\domains\prak\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#15 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#16 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct()
+#17 [internal function]: yii\base\Module->__construct()
+#18 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs()
+#19 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build()
+#20 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get()
+#21 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject()
+#22 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule()
+#23 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#24 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#25 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#26 C:\OSPanel\domains\prak\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct()
+#27 C:\OSPanel\domains\prak\web\index.php(12): yii\base\Application->__construct()
+#28 {main}
+2024-03-03 13:17:38 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'prak'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://prak/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_8.1\\ext;c:\\ospanel\\modules\\php\\PHP_8.1\\pear;c:\\ospanel\\modules\\php\\PHP_8.1\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_8.1;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MariaDB-10.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'prak'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/prak'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/prak'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/prak/web/index.php'
+    'REMOTE_PORT' => '50806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1709461057.4585
+    'REQUEST_TIME' => 1709461057
+]
